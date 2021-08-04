@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    /* 1rem = 10px*/
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+
+
+/* Scrollbars */
+body::-webkit-scrollbar {
+    width: 0.7rem;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 59, 59);
+    outline: 1px solid rgb(119, 0, 0);
+}
+
+
+/* Containers */
+.container {
+    max-width: 170rem;
+    margin: 0 auto;
+}
+
+/* Header */
+header,
+footer {
+    margin: 4rem 0 6rem 0;
+}
+
+header nav ul,
+footer nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li:first-child,
+footer nav ul li:first-child {
+    margin-right: auto;
+}
+
+header nav ul li:not(:first-child),
+footer nav ul li:not(:first-child) {
+    margin-left: 10rem;
+}
+
+header nav ul li:first-child a,
+footer nav ul li:first-child a {
+    color: #424555;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li:first-child a svg,
+footer nav ul li:first-child a svg {
+    margin-right: 3rem;
+}
+
+header nav ul li a,
+footer nav ul li a {
+    text-decoration: none;
+    color: #70748f;
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+/* Intro */
+.intro {
+    text-align: center;
+    background-color: #ffffff;
+    background-image: url(portasvg1.svg);
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.intro_letter {
+    font-size: 7rem;
+    background-color: rgb(255, 13, 13);
+    border-radius: 50%;
+    width: 14rem;
+    height: 14rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    margin: 0 auto 5rem auto;
+}
+
+.intro_name {
+    margin-bottom: 4rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.intro h1 {
+    font-size: 7rem;
+    font-weight: 700;
+    color: #000;
+    max-width: 50%;
+    margin: 0 auto 4rem auto;
+    line-height: 1.3;
+}
+
+.intro h1 span {
+    color: rgb(255, 13, 13);
+}
+
+.intro_excerpt {
+    font-size: 2rem;
+    margin-bottom: 8rem;
+}
+
+.intro_button {
+    background-color: rgb(255, 13, 13);
+    color: #fff;
+    border-radius: 7rem;
+    padding: 3rem 5rem;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.intro_button:hover {
+    background-color: rgb(235, 4, 4);
+}
+
+/* Counters */
+.counters {
+    margin: 10rem auto;
+    padding: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 0.15rem solid #ededed;
+    border-bottom: 0.15rem solid #ededed;
+}
+
+.counters div {
+    text-align: center;
+}
+
+.counters div p:first-child {
+    font-size: 6rem;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    line-height: 1;
+}
+
+.counters div p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: rgb(107, 107, 107);
+    letter-spacing: .2rem;
+}
+
+.counters div:nth-child(2),
+.counters div:nth-child(4) {
+    margin-top: -5.5rem;
+}
+
+.counters div span {
+    font-size: 10rem;
+    color: rgb(235, 235, 235);
+}
+
+/* About Me */
+.about-me {
+    background-color: rgb(17, 17, 17);
+    height: 75rem;
+    margin-bottom: 10rem;
+    color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    align-items: center;
+    padding: 0 20rem;
+    font-size: 1.7rem;
+}
+
+.about-me_content p:first-child {
+    font-weight: 500;
+    font-size: 1.9rem;
+    margin-bottom: 1rem;
+    letter-spacing: .2rem;
+    color: rgb(99, 99, 99);
+}
+
+.about-me h2 {
+    margin-bottom: 3rem;
+    font-size: 5.5rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.about-me p {
+    margin-bottom: 3rem;
+    line-height: 2.3;
+}
+
+.about-me_button {
+    background-color: rgb(255, 13, 13);
+    color: #fff;
+    border-radius: 7rem;
+    padding: 2rem 3rem;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 3rem;
+    display: inline-block;
+    font-size: 1.4rem;
+}
+
+/* Skills */
+.skills nav ul {
+    display: grid;
+    grid-template-columns: repeat(4, 3fr);
+    align-items: center;
+    list-style: none;
+    margin-bottom: 15rem;
+}
+
+.skills nav ul li {
+    text-align: center;
+}
+
+.skills nav ul li:nth-child(1) img {
+    width: 45%;
+}
+
+.skills nav ul li:nth-child(2) img {
+    width: 40%;
+}
+
+.skills nav ul li:nth-child(3) img {
+    width: 20%;
+
+}
+
+.skills nav ul li:nth-child(4) img {
+    width: 23%;
+}
+
+/* Services */
+.services {
+    display: flex;
+    align-items: center;
+    height: 60rem;
+    background-color: #f8f8f8;
+    background-image: url(portasvg1.svg);
+    background-size: 100%;
+    background-attachment: fixed;
+    padding: 8rem;
+    overflow: visible;
+    margin-bottom: 16rem;
+}
+
+.services_info {
+    max-width: 60rem;
+    margin-right: 13rem;
+}
+
+.services_info-content p:first-child {
+    font-weight: 500;
+    font-size: 1.9rem;
+    margin-bottom: 1rem;
+    letter-spacing: .2rem;
+    color: rgb(99, 99, 99);
+}
+
+.services_info-content h3 {
+    margin-bottom: 3rem;
+    font-size: 5.5rem;
+    font-weight: 600;
+    max-width: 70%;
+}
+
+.services_info-content p {
+    margin-bottom: 3rem;
+    line-height: 2.3;
+    font-size: 1.7rem;
+}
+
+.services_info-content p:nth-child(3) {
+    border-left: 0.3rem solid rgb(214, 214, 214);
+    padding-left: 3rem;
+}
+
+.services_info-content .services_info-button {
+    background-color: rgb(255, 13, 13);
+    color: #fff;
+    border-radius: 7rem;
+    padding: 2rem 3rem;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 3rem;
+    display: inline-block;
+    font-size: 1.4rem;
+}
+
+.services_cards {
+    display: grid;
+    grid-template-areas:
+        'd d b b'
+        'a a b b'
+        'a a c c'
+        'e e c c';
+    grid-gap: 7rem;
+    align-items: center;
+}
+
+.services_cards svg {
+    width: 5rem;
+    margin-bottom: 3rem;
+}
+
+.services_cards h3 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.services_cards p {
+    font-size: 1.8rem;
+    line-height: 2;
+    color: #505050;
+}
+
+.services_cards-1 {
+    grid-area: a;
+}
+
+.services_cards-2 {
+    grid-area: b;
+}
+
+.services_cards-3 {
+    grid-area: c;
+}
+
+.services_cards-1,
+.services_cards-2,
+.services_cards-3 {
+    background-color: #fff;
+    padding: 5rem;
+    min-width: 38rem;
+    max-width: 38rem;
+    min-height: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
